@@ -2,7 +2,7 @@
 
 一款在小星球上行走的第三人称叙事探索游戏。长夜季来临前，发条邮差“嘀嗒”要把最后几封信送到小星球上，每送到一封，那颗星的邮灯就会亮起来。
 
-故事、角色、星球、模型和配乐全部是原创的。这一版用 Unity 6 + HDRP 重做了画面，目前可以玩第一站“发条屿”，其余几站还在移植。
+故事、角色、星球、模型和配乐全部是原创的。这一版用 Unity 6 + HDRP 重做了画面，目前可以玩第一站“发条屿”和第二站“风车星”，其余几站还在移植。
 
 ## 下载
 
@@ -21,7 +21,8 @@
 | Shift | 快跑 |
 | 空格 | 跳 |
 | E | 互动 / 推进对话 |
-| Esc | 暂停（R 重来本站，L 切换中英文，G 切换画质，Q 退出） |
+| Esc | 暂停（R 重来本站，1 / 2 去往第一 / 第二站，L 切换中英文，G 切换画质，Q 退出） |
+| Q（按住） | 送完信之后启程去下一站 |
 | F2 | 切换到材质与光影展台（看模型用），再按一次回到游戏 |
 
 也支持手柄。
@@ -32,6 +33,6 @@
 
 ---
 
-**English**: a third-person story game about a wind-up postman delivering the last letters across tiny planets before the long night. Download `LongNightPost-mac.zip` from Releases and unzip it. The app is not signed, so the first time Control-click it and choose Open (or use System Settings → Privacy & Security → Open Anyway). Requires macOS 12+; Apple silicon recommended. Chapter 1 is playable in this version.
+**English**: a third-person story game about a wind-up postman delivering the last letters across tiny planets before the long night. Download `LongNightPost-mac.zip` from Releases and unzip it. The app is not signed, so the first time Control-click it and choose Open (or use System Settings → Privacy & Security → Open Anyway). Requires macOS 12+; Apple silicon recommended. Stops 1 and 2 are playable in this version (Esc, then 1 or 2 to jump to a stop).
 
 这个仓库只存放打包好的安装包，由脚本自动发布。
