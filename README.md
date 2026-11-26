@@ -8,7 +8,13 @@
 
 到 [Releases](https://github.com/Air-Sage/long-night-post-play/releases/latest) 下载 `LongNightPost-mac.zip`，解压得到 `LongNightPost.app`。
 
-**第一次打开**：这个程序没有苹果开发者签名，直接双击会被拦下。在 Finder 里按住 Control 点按 `LongNightPost.app`，选“打开”，再点“打开”。如果还是打不开，到“系统设置 → 隐私与安全性”，在页面底部点“仍要打开”。之后就能正常双击了。
+**第一次打开**：这个程序没有苹果的开发者签名和公证，第一次双击会弹出“Apple 无法验证‘LongNightPost’是否包含……恶意软件”，这是正常的，按下面做一次就好：
+
+1. 在提示框里点“完成”（别点“移到废纸篓”）。
+2. 打开“系统设置 → 隐私与安全性”，往下滚到“安全性”一栏，会看到“已阻止‘LongNightPost’以保护你的 Mac”，点旁边的“仍要打开”。
+3. 输入开机密码（或按触控 ID），在再弹出的框里点“仍要打开”。
+
+之后就能正常双击了。“仍要打开”只在被拦下后的一段时间里出现，没看到就先再双击一次程序。macOS 14 及更早的系统也可以在 Finder 里按住 Control 点按程序，选“打开”。熟悉终端的话，也可以输入 `xattr -dr com.apple.quarantine `（末尾有空格），把 `LongNightPost.app` 拖进终端窗口再回车。
 
 **配置**：macOS 12 或更新，Apple 芯片和 Intel 都能运行，建议 M1 或更新的 Mac。游戏会根据显卡负载自动调整渲染分辨率来保持流畅；如果还是卡，暂停后按 G 换成“低”画质。
 
@@ -33,6 +39,6 @@
 
 ---
 
-**English**: a third-person story game about a wind-up postman delivering the last letters across tiny planets before the long night. Download `LongNightPost-mac.zip` from Releases and unzip it. The app is not signed, so the first time Control-click it and choose Open (or use System Settings → Privacy & Security → Open Anyway). Requires macOS 12+; Apple silicon recommended. Stops 1 and 2 are playable in this version (Esc, then 1 or 2 to jump to a stop).
+**English**: a third-person story game about a wind-up postman delivering the last letters across tiny planets before the long night. Download `LongNightPost-mac.zip` from Releases and unzip it. The app is not signed or notarized by Apple, so the first launch says Apple could not verify it. Click Done, open System Settings → Privacy & Security, scroll to Security and click Open Anyway next to LongNightPost, then confirm with your password and click Open Anyway again. (On macOS 14 and older, Control-click → Open also works.) Requires macOS 12+; Apple silicon recommended. Stops 1 and 2 are playable in this version (Esc, then 1 or 2 to jump to a stop).
 
 这个仓库只存放打包好的安装包，由脚本自动发布。
